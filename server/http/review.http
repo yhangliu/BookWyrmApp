@@ -1,0 +1,38 @@
+@url = http://localhost:8080/api/review
+
+GET {{url}} HTTP/1.1
+
+### Find by isbn
+
+GET {{url}}/9780141040349 HTTP/1.1
+
+### Add review
+
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "createdById": "1",
+    "isbn": "9780141040349",
+    "reviewText": "Really cool text",
+    "rating": "7"
+}
+
+### Add review unhappy
+
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "createdById": "1",
+    "isbn": "9780141040349",
+    "rating": "7"
+}
+
+### Delete
+
+DELETE {{url}}/6 HTTP/1.1
+
+### Delete unhappy
+
+DELETE {{url}}/600 HTTP/1.1

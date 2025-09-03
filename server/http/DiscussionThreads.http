@@ -1,0 +1,34 @@
+@url = http://localhost:8080/api/threads
+
+####
+GET {{url}} HTTP/1.1
+####
+GET {{url}}/club/1 HTTP/1.1
+####
+GET {{url}}/user/1 HTTP/1.1
+####
+PUT {{url}}/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "TEST",
+    "createdAt": "2023-06-10",
+    "createdBy": 2,
+    "bookclubId": 1,
+    "messages": null
+  }
+####
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "NEW TITLE",
+    "createdAt": "2024-08-07",
+    "createdBy": 2,
+    "bookclubId": 4,
+    "messages": null
+  }
+###
+
+DELETE {{url}}/8 HTTP/1.1 

@@ -1,0 +1,77 @@
+@url = http://localhost:8080/api/bookClub
+
+GET {{url}} HTTP/1.1
+
+### Find by Genre
+
+GET {{url}}/genre/Fantasy HTTP/1.1
+
+### Find by Location
+
+GET {{url}}/location/Seattle, WA HTTP/1.1
+
+### Add Book Club
+
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Hairy Potters",
+    "isbn": "9780141040349",
+    "createdById": "1"
+
+
+}
+
+### Add club unhappy
+
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+}
+
+### Update Book Club
+
+PUT {{url}}/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "2",
+    "name": "Hairy Potters",
+    "description": "Club for potter pals",
+    "location": "MA",
+    "isOnline": false,
+    "isbn": "9780141040349",
+    "createdById": "1",
+    "genre": "Fantasy"
+
+
+}
+
+
+### Update Book Club Unhappy
+
+PUT {{url}}/100 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "2",
+    "name": "Hairy Potters",
+    "description": "Club for potter pals",
+    "location": "MA",
+    "isOnline": false,
+    "isbn": "9780141040349",
+    "createdById": "1",
+    "genre": "Fantasy"
+
+
+}
+
+### Delete
+
+DELETE {{url}}/4 HTTP/1.1
+
+### Delete unhappy
+
+DELETE {{url}}/600 HTTP/1.1

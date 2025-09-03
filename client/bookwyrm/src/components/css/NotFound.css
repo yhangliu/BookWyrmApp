@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+    max-width: 31.25rem;
+    width: 100%;
+  }

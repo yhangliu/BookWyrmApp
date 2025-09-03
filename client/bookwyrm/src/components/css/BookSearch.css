@@ -1,0 +1,56 @@
+.book-search-container {
+    margin-top: 200px;
+  }
+  
+  .search-input {
+    font-size: 1.2rem;
+  }
+  
+  .card-custom {
+    padding: 20px;
+    background-color: #c45b52;
+  }
+  
+  .card-img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .results-container {
+    margin-top: 20px;
+  }
+
+
+
+
+  .book-search-container {
+    margin-top: 200px;
+  }
+  
+  .search-input {
+    font-size: 1.2rem;
+    flex-grow: 1; }
+  
+
+
+  
+  .results-container {
+    margin-top: 20px;
+  }
+  
+  
+  .d-flex {
+    display: flex;
+  }
+
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .mb-0 {
+    margin-bottom: 0; 
+  }
+  
+  .link {
+    text-decoration: underline !important;
+  }

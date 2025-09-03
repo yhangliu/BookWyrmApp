@@ -1,0 +1,51 @@
+Button {
+    margin: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+.navbar {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+
+.navlink {
+  color: #fff !important;
+  margin-right: 1.5rem;
+}
+
+.navlink:hover {
+  color: #ccc !important;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+button {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: white;
+}
+
+.background {
+  background-color: #c45b52 !important;
+}
+
+
+.navbar-dark .btn-primary .nav-link:hover {
+  text-decoration: none;
+}
+
+button {
+    font-size: 1rem !important;
+}

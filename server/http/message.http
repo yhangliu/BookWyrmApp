@@ -1,0 +1,62 @@
+@url = http://localhost:8080/api/messages
+
+GET {{url}} HTTP/1.1
+
+###
+GET {{url}}/1 HTTP/1.1
+
+### bad request
+GET {{url}}/999 HTTP/1.1
+
+###
+GET {{url}}/thread/1 HTTP/1.1
+
+### good request but no content
+GET {{url}}/thread/999 HTTP/1.1
+
+### bad request
+GET {{url}}/thread/ HTTP/1.1
+
+###
+GET {{url}}/user/1 HTTP/1.1
+
+### good request but no content
+GET {{url}}/user/999 HTTP/1.1
+
+### bad request
+GET {{url}}/user/ HTTP/1.1
+
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "threadId": 1,
+    "userId": 1,
+    "message": "Any new fantasy books worth reading?",
+    "createdAt": "2023-12-01T00:00:00"
+}
+
+### bad request
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "threadId": 999,
+    "userId": 999,
+    "message": "",
+    "createdAt": "2023-12-01T00:00:00"
+}
+
+###
+PUT {{url}}/1 HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "id": 1,
+    "threadId": 1,
+    "userId": 1,
+    "message": "Updated message text",
+    "createdAt": "2023-06-11T00:00:00"
+}

@@ -1,0 +1,15 @@
+.table td {
+    vertical-align: middle;
+  }
+  
+  .table .btn {
+    margin: 0;
+  }
+
+  .club-name {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}

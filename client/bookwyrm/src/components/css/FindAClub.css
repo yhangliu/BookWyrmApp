@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+.container {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10.75rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, button, input {
+    font-size: 1.25rem;
+}
+/* Center the .mb-3 container */
+.mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Ensure buttons and inputs align well */
+.mb-3 button,
+.mb-3 input {
+    margin: 0.5rem;
+}
+
+.table {
+    
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+/* Increase font size for table headers and cells */
+.table th,
+.table td {
+    border: #c45b52;
+    padding: 1rem; /* Adjust padding if needed */
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+    font-size: 1.25rem; /* Increase font size for better readability */
+}
+.table tr{
+    border: #c45b52;
+
+}
+
+/* Style for table headers */
+.table th {
+    background-color: #c45b52;
+    border: #c45b52;
+    color: white;
+    font-weight: 600;
+}
+
+/* Style for table cells */
+.table td {
+    background-color: white;
+    color: #333;
+    font-weight: 400;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style for buttons */
+.btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+a {
+    color: #c45b52;
+ }
+
+ a:hover {
+    color: #c45b52;
+ }
